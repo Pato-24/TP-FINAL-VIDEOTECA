@@ -1,0 +1,106 @@
+{
+  "usuarios": [
+    {
+      "id": "1",
+      "usuario": "admin",
+      "password": "1234",
+      "rol": "admin"
+    },
+    {
+      "id": "2",
+      "usuario": "cliente1",
+      "password": "5678",
+      "rol": "user"
+    },
+    {
+      "id": "3",
+      "usuario": "cliente2",
+      "password": "abcd",
+      "rol": "user"
+    }
+  ],
+  "peliculas": [
+    {
+      "id": "1",
+      "titulo": "Matrix",
+      "genero": "Ciencia Ficción",
+      "anio": 1999,
+      "sinopsis": "Neo descubre la verdad del mundo simulado."
+    },
+    {
+      "id": "2",
+      "titulo": "Titanic",
+      "genero": "Romance",
+      "anio": 1997,
+      "sinopsis": "Una historia de amor en el trágico viaje del Titanic."
+    },
+    {
+      "id": "3",
+      "titulo": "El Señor de los Anillos",
+      "genero": "Fantasía",
+      "anio": 2001,
+      "sinopsis": "La aventura épica para destruir el Anillo Único."
+    },
+    {
+      "id": "5cb9",
+      "titulo": "perodj",
+      "genero": "ficcion",
+      "anio": "2025",
+      "sinopsis": "snfurfhd"
+    }
+  ],
+  "clientes": [
+    {
+      "id": "1",
+      "nombre": "Juan Pérez",
+      "contacto": "juan@example.com",
+      "telefono": "123456789"
+    },
+    {
+      "id": "2",
+      "nombre": "Ana Gómez",
+      "contacto": "ana@example.com",
+      "telefono": "987654321"
+    },
+    {
+      "id": "3",
+      "nombre": "Carlos Ruiz",
+      "contacto": "carlos@example.com",
+      "telefono": "555123456"
+    }
+  ],
+  "alquileres": [
+    {
+      "id": "1",
+      "clienteId": 1,
+      "peliculaId": 1,
+      "fechaInicio": "2025-06-20",
+      "fechaFin": "2025-06-25",
+      "devuelto": false
+    },
+    {
+      "id": "2",
+      "clienteId": 2,
+      "peliculaId": 2,
+      "fechaInicio": "2025-06-18",
+      "fechaFin": "2025-06-23",
+      "devuelto": true
+    },
+    {
+      "id": "3",
+      "clienteId": 3,
+      "peliculaId": 3,
+      "fechaInicio": "2025-06-15",
+      "fechaFin": "2025-06-22",
+      "devuelto": false
+    },
+    {
+      "id": "4",
+      "clienteId": 1,
+      "peliculaId": 2,
+      "fechaInicio": "2025-05-10",
+      "fechaFin": "2025-05-17",
+      "devuelto": true
+    }
+  ]
+}

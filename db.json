@@ -2,71 +2,141 @@
   "usuarios": [
     {
       "id": "1",
-      "usuario": "admin",
-      "password": "1234",
+      "usuario": "benjamin",
+      "password": "1111",
+      "rol": "admin"
+    },
+        {
+      "id": "2",
+      "usuario": "emanuel",
+      "password": "2222",
       "rol": "admin"
     },
     {
-      "id": "2",
+      "id": "3",
+      "usuario": "patricia",
+      "password": "3333",
+      "rol": "admin"
+    },
+    {
+      "id": "4",
+      "usuario": "cristian",
+      "password": "4444",
+      "rol": "admin"
+    },
+    {
+      "id": "5",
       "usuario": "cliente1",
       "password": "5678",
       "rol": "user"
     },
     {
-      "id": "3",
+      "id": "6",
       "usuario": "cliente2",
       "password": "abcd",
       "rol": "user"
     }
   ],
+  "integrantes": [
+    {
+      "nombre": "Benjamin",
+      "apellido": "Sanagua",
+      "email": "benja@gmail.com",
+      "foto": ""
+    },
+    {
+      "nombre": "Emanuel",
+      "apellido": "Ybarra",
+      "email": "emanuel@gmail.com",
+      "foto": ""
+    },
+    {
+      "nombre": "Patricia",
+      "apellido": "Arguello",
+      "email": "patricia@gmail.com",
+      "foto": ""
+    },
+        {
+      "nombre": "cristian",
+      "apellido": "De la Cruz",
+      "email": "cristian@gmail.com",
+      "foto": ""
+    }
+  ],
   "peliculas": [
     {
       "id": "1",
-      "titulo": "Matrix",
-      "genero": "Ciencia Ficción",
-      "anio": 1999,
-      "sinopsis": "Neo descubre la verdad del mundo simulado."
+      "titulo": "Minecraft",
+      "genero": "Fantasía, Acción, Infantil",
+      "anio": 2025,
+      "sinopsis": "Minecraft sigue a un grupo de aventureros que deberán enfrentarse a un peligroso Ender Dragon que amenaza con destruir su mundo..",
+      "imagenUrl": "https://somosdecine.com/wp-content/uploads/minecraft-2025.webp"
     },
     {
       "id": "2",
-      "titulo": "Titanic",
-      "genero": "Romance",
-      "anio": 1997,
-      "sinopsis": "Una historia de amor en el trágico viaje del Titanic."
+      "titulo": "Peter Pan: Pesadilla en Nunca Jamás",
+      "genero": "Terror",
+      "anio": 2025,
+      "sinopsis": "Una nueva vuelta de tuerca al personaje de Peter Pan que reinventa este cuento clásico en una versión mucho más oscura y violenta.",
+      "imagenUrl": "https://somosdecine.com/wp-content/uploads/peter-pan-pesadilla-en-nunca-jamas-2025.webp"
     },
     {
       "id": "3",
-      "titulo": "El Señor de los Anillos",
-      "genero": "Fantasía",
-      "anio": 2001,
-      "sinopsis": "La aventura épica para destruir el Anillo Único."
+      "titulo": "28 años después",
+      "genero": "Terror, Ciencia ficción",
+      "anio": 2025,
+      "sinopsis": "Han pasado casi tres décadas desde que el virus de la rabia escapó de un laboratorio de armas biológicas, y ahora, todavía bajo una cuarentena brutalmente impuesta, algunos han encontrado formas de existir en medio de los infectados.",
+      "imagenUrl": "https://somosdecine.com/wp-content/uploads/28-anos-despues-2025.webp"
     },
     {
-      "id": "5cb9",
-      "titulo": "perodj",
-      "genero": "ficcion",
-      "anio": "2025",
-      "sinopsis": "snfurfhd"
+      "id": "4",
+      "titulo": "Capitán América: Brave New World",
+      "genero": "Acción, Aventuras, Superhéroes, Marvel",
+      "anio": 2025,
+      "sinopsis": "Sam se encuentra en medio de un incidente internacional. Debe descubrir la razón detrás de un nefasto complot global antes de que la verdadera mente maestra tenga al mundo entero viendo rojo.",
+      "imagenUrl": "https://somosdecine.com/wp-content/uploads/capitan-america-brave-new-world-2025-.webp"
+    },
+    {
+      "id": "5",
+      "titulo": "Cómo entrenar a tu dragón",
+      "genero": "Aventuras, Fantástico, Infantil",
+      "anio": 2025,
+      "sinopsis": "Shipo, un joven vikingo, desafía las tradiciones de su pueblo al entablar una inesperada amistad con Desdentao, un dragón Furia Nocturna. Esta relación no solo cambiará su vida, sino también el destino de toda su comunidad.",
+      "imagenUrl": "https://somosdecine.com/wp-content/uploads/como-entrenar-a-tu-dragon-2025.webp"
+    },
+    {
+      "id": "6",
+      "titulo": "Blancanieves",
+      "genero": "Fantasía, Aventuras, Disney, Infantil",
+      "anio": 2025,
+      "sinopsis": "La icónica historia de Blancanieves regresa a la gran pantalla en esta adaptación de acción real. Rachel Zegler interpreta a Blancanieves, la princesa con un corazón puro cuya belleza y bondad desencadenan la envidia de su madrastra, la Reina Malvada, encarnada por Gal Gadot.",
+      "imagenUrl": "https://somosdecine.com/wp-content/uploads/blancanieves-2025.webp"
     }
   ],
   "clientes": [
     {
       "id": "1",
       "nombre": "Juan Pérez",
-      "contacto": "juan@example.com",
+      "contacto": "juan@gmail.com",
       "telefono": "123456789"
     },
     {
       "id": "2",
       "nombre": "Ana Gómez",
-      "contacto": "ana@example.com",
+      "contacto": "ana@gmail.com",
       "telefono": "987654321"
     },
     {
       "id": "3",
       "nombre": "Carlos Ruiz",
-      "contacto": "carlos@example.com",
+      "contacto": "carlos@gmail.com",
       "telefono": "555123456"
+    },
+    {
+      "id": "4",
+      "nombre": "Laura Fernández",
+      "contacto": "laura@gmail.com",
+      "telefono": "444987654"
     }
   ],
   "alquileres": [

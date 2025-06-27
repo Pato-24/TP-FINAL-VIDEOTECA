@@ -70,7 +70,7 @@
       "genero": "Fantasía, Acción, Infantil",
       "anio": 2025,
       "sinopsis": "Minecraft sigue a un grupo de aventureros que deberán enfrentarse a un peligroso Ender Dragon que amenaza con destruir su mundo..",
-      "imagenUrl": "https://somosdecine.com/wp-content/uploads/minecraft-2025.webp"
+      "imagenUrl": "img/minecraft.jpg"
     },
     {
       "id": "2",
@@ -78,7 +78,7 @@
       "genero": "Terror",
       "anio": 2025,
       "sinopsis": "Una nueva vuelta de tuerca al personaje de Peter Pan que reinventa este cuento clásico en una versión mucho más oscura y violenta.",
-      "imagenUrl": "https://somosdecine.com/wp-content/uploads/peter-pan-pesadilla-en-nunca-jamas-2025.webp"
+      "imagenUrl": "img/Peter-Pan.jpg"
     },
     {
       "id": "3",
@@ -86,7 +86,7 @@
       "genero": "Terror, Ciencia ficción",
       "anio": 2025,
       "sinopsis": "Han pasado casi tres décadas desde que el virus de la rabia escapó de un laboratorio de armas biológicas, y ahora, todavía bajo una cuarentena brutalmente impuesta, algunos han encontrado formas de existir en medio de los infectados.",
-      "imagenUrl": "https://somosdecine.com/wp-content/uploads/28-anos-despues-2025.webp"
+      "imagenUrl": "img/28-anos-despues.jpg"
     },
     {
       "id": "4",
@@ -94,7 +94,7 @@
       "genero": "Acción, Aventuras, Superhéroes, Marvel",
       "anio": 2025,
       "sinopsis": "Sam se encuentra en medio de un incidente internacional. Debe descubrir la razón detrás de un nefasto complot global antes de que la verdadera mente maestra tenga al mundo entero viendo rojo.",
-      "imagenUrl": "https://somosdecine.com/wp-content/uploads/capitan-america-brave-new-world-2025-.webp"
+      "imagenUrl": "img/CAPITAN-AMERICA.jpg"
     },
     {
       "id": "5",
@@ -102,7 +102,7 @@
       "genero": "Aventuras, Fantástico, Infantil",
       "anio": 2025,
       "sinopsis": "Shipo, un joven vikingo, desafía las tradiciones de su pueblo al entablar una inesperada amistad con Desdentao, un dragón Furia Nocturna. Esta relación no solo cambiará su vida, sino también el destino de toda su comunidad.",
-      "imagenUrl": "https://somosdecine.com/wp-content/uploads/como-entrenar-a-tu-dragon-2025.webp"
+      "imagenUrl": "img/dragon.jpg"
     },
     {
       "id": "6",
@@ -110,7 +110,7 @@
       "genero": "Fantasía, Aventuras, Disney, Infantil",
       "anio": 2025,
       "sinopsis": "La icónica historia de Blancanieves regresa a la gran pantalla en esta adaptación de acción real. Rachel Zegler interpreta a Blancanieves, la princesa con un corazón puro cuya belleza y bondad desencadenan la envidia de su madrastra, la Reina Malvada, encarnada por Gal Gadot.",
-      "imagenUrl": "https://somosdecine.com/wp-content/uploads/blancanieves-2025.webp"
+      "imagenUrl": "img/blancanieves.jpg"
     }
   ],
   "clientes": [

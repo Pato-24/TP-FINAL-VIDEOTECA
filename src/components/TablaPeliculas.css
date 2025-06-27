@@ -1,0 +1,47 @@
+.tabla-peliculas {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.tabla-peliculas th, .tabla-peliculas td {
+  padding: 12px 16px;
+  text-align: left;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.tabla-peliculas th {
+  background: #1a6cbe;
+  color: #fff;
+}
+
+.tabla-peliculas img {
+  width: 80px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 4px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.10);
+}
+
+.tabla-peliculas button {
+  margin-right: 8px;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  background: #007bff;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.tabla-peliculas button:last-child {
+  background: #dc3545;
+}
+
+.tabla-peliculas button:hover {
+  opacity: 0.85;
+}

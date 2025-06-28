@@ -36,18 +36,38 @@ const AdminPeliculas = () => {
   };
 
   return (
-    <div>
-      <h2>Gestión de Películas</h2>
-      <FormPelicula
-        onGuardar={guardarPelicula}
-        peliculaSeleccionada={peliculaEditando}
-        onCancelar={() => setPeliculaEditando(null)}
-      />
-      <TablaPeliculas
-        peliculas={peliculas}
-        onEditar={setPeliculaEditando}
-        onEliminar={eliminarPelicula}
-      />
+    <div
+      className="min-vh-100 py-5"
+      style={{
+        background: "linear-gradient(135deg, #232526 0%, #414345 100%)",
+        minHeight: "100vh",
+      }}
+    >
+      {/* Título con el mismo estilo que Home */}
+      <h1
+        className="text-center mb-4 animate__animated animate__fadeInDown"
+        style={{
+          fontFamily: "'Bebas Neue', Arial, sans-serif",
+          fontSize: "3.5rem",
+          letterSpacing: "2px",
+          color: "#fff",
+          textShadow: "2px 2px 8px #0008",
+        }}
+      >
+        Administración de Películas
+      </h1>
+      <div className="container">
+        <FormPelicula
+          onGuardar={guardarPelicula}
+          peliculaSeleccionada={peliculaEditando}
+          onCancelar={() => setPeliculaEditando(null)}
+        />
+        <TablaPeliculas
+          peliculas={peliculas}
+          onEditar={setPeliculaEditando}
+          onEliminar={eliminarPelicula}
+        />
+      </div>
     </div>
   );
 };

@@ -1,6 +1,6 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Login from "./pages/Login";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
+import Login from "./pages/Login";
 import AdminPeliculas from "./pages/AdminPeliculas";
 import AdminClientes from "./pages/AdminClientes";
 import AdminAlquileres from "./pages/AdminAlquileres";
@@ -10,7 +10,7 @@ import Navbar from "./components/Navbar";
 
 function App() {
   return (
-    <BrowserRouter>
+    <Router>
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -28,7 +28,7 @@ function App() {
         <Route path="/clientes/:clienteId/historial" element={<HistorialClienteRoute />} />
         <Route path="/peliculas" element={<AdminPeliculas />} />
       </Routes>
-    </BrowserRouter>
+    </Router>
   );
 }
 

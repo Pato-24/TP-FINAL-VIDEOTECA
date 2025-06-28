@@ -111,6 +111,22 @@
       "anio": 2025,
       "sinopsis": "La icónica historia de Blancanieves regresa a la gran pantalla en esta adaptación de acción real. Rachel Zegler interpreta a Blancanieves, la princesa con un corazón puro cuya belleza y bondad desencadenan la envidia de su madrastra, la Reina Malvada, encarnada por Gal Gadot.",
       "imagenUrl": "img/blancanieves.jpg"
+    },
+    {
+      "id": "7",
+      "titulo": "Destino Final - Lazos de Sangre",
+      "genero": "Horror, Suspenso",
+      "anio": 2025,
+      "sinopsis": "En esta nueva entrega de la saga Destino Final, un grupo de amigos escapa de un accidente mortal, pero la Muerte no se detiene y comienza a cobrarse sus vidas una por una. Con giros inesperados y escenas impactantes, esta película promete mantener a los espectadores al borde de sus asientos.",
+      "imagenUrl": "img/final_destination.jpg"
+    },
+{
+      "id": "8",
+      "titulo": "Mision Imposible - Sentencia Final",
+      "genero": "Acción, Aventura, Espionaje",
+      "anio": 2025,
+      "sinopsis": "Ethan Hunt y su equipo de la IMF se enfrentan a una nueva amenaza global que pone en peligro la seguridad del mundo. Con escenas de acción trepidantes y un guion lleno de sorpresas, esta entrega promete ser una de las más emocionantes de la saga.",
+      "imagenUrl": "img/mission_impossible.jpg"
     }
   ],
   "clientes": [

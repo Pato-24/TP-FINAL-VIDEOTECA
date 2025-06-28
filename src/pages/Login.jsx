@@ -1,6 +1,8 @@
 import { useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
+import "../components/Login.css";
+ // Asegurate de crear este archivo para los estilos personalizados
 
 const Login = () => {
   const [usuario, setUsuario] = useState("");
@@ -33,27 +35,31 @@ const Login = () => {
   };
 
   return (
-    <form onSubmit={handleLogin}>
-      <h2>Login</h2>
-      {error && <div style={{ color: "red" }}>{error}</div>}
-      <input
-        type="text"
-        placeholder="Usuario"
-        value={usuario}
-        onChange={(e) => setUsuario(e.target.value)}
-        autoFocus
-      />
-      <input
-        type="password"
-        placeholder="Contraseña"
-        value={password}
-        onChange={(e) => setPassword(e.target.value)}
-      />
-      <button type="submit" disabled={!usuario || !password || loading}>
-        {loading ? "Ingresando..." : "Ingresar"}
-      </button>
-    </form>
+    <div className="login-container">
+      <form onSubmit={handleLogin} className="login-form">
+        <h2>Iniciar Sesión</h2>
+        {error && <p className="login-error">{error}</p>}
+        <input
+          type="text"
+          placeholder="Usuario"
+          value={usuario}
+          onChange={(e) => setUsuario(e.target.value)}
+          required
+        />
+        <input
+          type="password"
+          placeholder="Contraseña"
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+          required
+        />
+        <button type="submit" disabled={!usuario || !password || loading}>
+          {loading ? "Ingresando..." : "Ingresar"}
+        </button>
+      </form>
+    </div>
   );
 };
 
 export default Login;
+

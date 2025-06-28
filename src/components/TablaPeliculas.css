@@ -1,41 +1,58 @@
 .tabla-peliculas {
   width: 100%;
-  border-collapse: collapse;
-  margin-top: 20px;
-  background: #f8f9fa;
-  border-radius: 8px;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin-top: 30px;
+  background: linear-gradient(135deg, #232526 0%, #414345 100%);
+  border-radius: 16px;
   overflow: hidden;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  box-shadow: 0 4px 24px rgba(0,0,0,0.18);
+  color: #fff;
+  font-family: 'Bebas Neue', Arial, sans-serif;
 }
 
 .tabla-peliculas th, .tabla-peliculas td {
-  padding: 12px 16px;
+  padding: 16px 20px;
   text-align: left;
-  border-bottom: 1px solid #dee2e6;
+  border-bottom: 1px solid #2c2f33;
+  font-size: 1.1em;
 }
 
 .tabla-peliculas th {
   background: #1a6cbe;
   color: #fff;
+  font-size: 1.2em;
+  letter-spacing: 1px;
+  border-bottom: 2px solid #007bff;
+}
+
+.tabla-peliculas tr:last-child td {
+  border-bottom: none;
 }
 
 .tabla-peliculas img {
-  width: 80px;
-  height: 120px;
+  width: 100px;
+  height: 150px;
   object-fit: cover;
-  border-radius: 4px;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.10);
+  border-radius: 10px;
+  box-shadow: 0 4px 16px #0006;
+  display: block;
+  margin: 0 auto;
+  background: #181a1b;
 }
 
 .tabla-peliculas button {
   margin-right: 8px;
-  padding: 6px 12px;
+  padding: 7px 16px;
   border: none;
-  border-radius: 4px;
+  border-radius: 6px;
   background: #007bff;
   color: #fff;
   cursor: pointer;
-  transition: background 0.2s;
+  font-weight: bold;
+  font-family: inherit;
+  transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
 }
 
 .tabla-peliculas button:last-child {
@@ -43,5 +60,15 @@
 }
 
 .tabla-peliculas button:hover {
-  opacity: 0.85;
+  opacity: 0.92;
+  transform: scale(1.06);
+  box-shadow: 0 4px 16px #0004;
+}
+
+.tabla-peliculas tbody tr {
+  transition: background 0.2s;
+}
+
+.tabla-peliculas tbody tr:hover {
+  background: rgba(30, 144, 255, 0.08);
 }

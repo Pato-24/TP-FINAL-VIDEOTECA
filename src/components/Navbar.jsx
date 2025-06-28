@@ -6,7 +6,7 @@ const Navbar = () => {
     <nav style={{ padding: "10px", background: "#eee" }}>
       <ul style={{ display: "flex", listStyle: "none", gap: "20px", margin: 0, padding: 0 }}>
         <li>
-          <Link to="/home">Home</Link>
+          <Link to="/home">Inicio</Link>
         </li>
         <li>
           <Link to="/clientes">Clientes</Link>

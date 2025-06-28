@@ -1,0 +1,63 @@
+.tabla-alquileres {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin-top: 30px;
+  background: linear-gradient(135deg, #232526 0%, #414345 100%);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.18);
+  color: #fff;
+  font-family: 'Bebas Neue', Arial, sans-serif;
+}
+
+.tabla-alquileres th, .tabla-alquileres td {
+  padding: 16px 20px;
+  text-align: left;
+  border-bottom: 1px solid #2c2f33;
+  font-size: 1.1em;
+}
+
+.tabla-alquileres th {
+  background: #1a6cbe;
+  color: #fff;
+  font-size: 1.2em;
+  letter-spacing: 1px;
+  border-bottom: 2px solid #007bff;
+}
+
+.tabla-alquileres tr:last-child td {
+  border-bottom: none;
+}
+
+.tabla-alquileres button {
+  margin-right: 8px;
+  padding: 7px 16px;
+  border: none;
+  border-radius: 6px;
+  background: #007bff;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+  font-family: inherit;
+  transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+}
+
+.tabla-alquileres button:last-child {
+  background: #dc3545;
+}
+
+.tabla-alquileres button:hover {
+  opacity: 0.92;
+  transform: scale(1.06);
+  box-shadow: 0 4px 16px #0004;
+}
+
+.tabla-alquileres tbody tr {
+  transition: background 0.2s;
+}
+
+.tabla-alquileres tbody tr:hover {
+  background: rgba(30, 144, 255, 0.08);
+}

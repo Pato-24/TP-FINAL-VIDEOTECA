@@ -1,8 +1,7 @@
 import { useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
-import "../components/Login.css";
- // Asegurate de crear este archivo para los estilos personalizados
+import "../components/Login.css"; // Asegurate de que la ruta sea correcta
 
 const Login = () => {
   const [usuario, setUsuario] = useState("");
@@ -56,10 +55,17 @@ const Login = () => {
         <button type="submit" disabled={!usuario || !password || loading}>
           {loading ? "Ingresando..." : "Ingresar"}
         </button>
+
+        {/* Link de registro */}
+        <p className="login-link">
+          ¿No tenés cuenta?{" "}
+          <span onClick={() => navigate("/registro")} className="link-registrate">
+            Registrate gratis
+          </span>
+        </p>
       </form>
     </div>
   );
 };
 
 export default Login;
-

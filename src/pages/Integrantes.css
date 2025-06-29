@@ -1,0 +1,131 @@
+/* Estilos para la página de Integrantes */
+.integrantes-container {
+  background: linear-gradient(135deg, #232526 0%, #414345 100%);
+  padding: 40px 20px;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px #0005;
+  max-width: 600px;
+  margin: 40px auto;
+  color: #fff;
+  animation: fadeInUp 1s;
+}
+
+.integrantes-title {
+  font-family: 'Bebas Neue', Arial, sans-serif;
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+  text-align: center;
+  margin-bottom: 24px;
+  color: #00e6d0;
+  text-shadow: 2px 2px 8px #0008;
+  animation: bounceIn 1.2s;
+}
+
+.integrantes-list {
+  list-style: none;
+  padding: 0;
+}
+
+.integrantes-list li {
+  background: rgba(0,0,0,0.25);
+  margin-bottom: 14px;
+  padding: 16px 20px;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  box-shadow: 0 2px 8px #0003;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+  animation: fadeIn 0.7s;
+}
+
+.integrantes-list li:hover {
+  transform: scale(1.04);
+  box-shadow: 0 4px 16px #00e6d088;
+  background: rgba(0,230,208,0.10);
+}
+
+.integrante-item {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  background: rgba(0,0,0,0.25);
+  margin-bottom: 14px;
+  padding: 16px 20px;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  box-shadow: 0 2px 8px #0003;
+  transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+  animation: fadeIn 0.7s;
+}
+
+.integrante-item:hover {
+  transform: scale(1.05) rotate(-1deg);
+  box-shadow: 0 8px 24px #00e6d088;
+  background: rgba(0,230,208,0.13);
+}
+
+.integrante-foto-container {
+  flex-shrink: 0;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 2px 8px #00e6d055;
+  border: 2px solid #00e6d0;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: box-shadow 0.3s, border 0.3s;
+}
+
+.integrante-foto {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  border-radius: 50%;
+  transition: transform 0.5s cubic-bezier(.68,-0.55,.27,1.55), box-shadow 0.3s;
+}
+
+.integrante-item:hover .integrante-foto {
+  transform: scale(1.15) rotate(8deg);
+  box-shadow: 0 4px 24px #00e6d0cc;
+}
+
+.integrante-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.integrante-nombre {
+  font-weight: bold;
+  font-size: 1.15rem;
+  color: #00e6d0;
+  letter-spacing: 1px;
+}
+
+.integrante-email {
+  font-size: 0.95rem;
+  color: #e0e0e0;
+  opacity: 0.85;
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes bounceIn {
+  0% { transform: scale(0.7); opacity: 0; }
+  60% { transform: scale(1.1); opacity: 1; }
+  100% { transform: scale(1); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}

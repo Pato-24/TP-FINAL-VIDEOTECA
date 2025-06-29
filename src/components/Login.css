@@ -85,3 +85,8 @@
 .link-registrate:hover {
   text-decoration: underline;
 }
+.login-success {
+  color: green;
+  font-weight: bold;
+  margin-bottom: 10px;
+}

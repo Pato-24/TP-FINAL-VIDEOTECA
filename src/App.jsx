@@ -7,7 +7,7 @@ import AdminAlquileres from "./pages/AdminAlquileres";
 import HistorialClienteRoute from "./routes/HistorialCliente";
 import ProtectedRoute from "./routes/protectedroute";
 import Navbar from "./components/Navbar";
-import Integrantes from "./pages/intregantes";
+import Integrantes from "./pages/Integrantes";
 function App() {
   return (
     <Router>

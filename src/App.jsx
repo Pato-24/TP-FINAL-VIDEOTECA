@@ -9,6 +9,11 @@ import ProtectedRoute from "./routes/protectedroute";
 import Navbar from "./components/Navbar";
 import Integrantes from "./pages/Integrantes";
 import Registro from "./pages/Registro";
+import Usuarios from "./pages/Usuarios";
+
+
+
+
 function App() {
   return (
     <Router>
@@ -30,6 +35,8 @@ function App() {
         <Route path="/peliculas" element={<AdminPeliculas />} />
         <Route path="/integrantes" element={<Integrantes />} />
         <Route path="/registro" element={<Registro />} />
+          <Route path="/usuarios" element={<Usuarios />} />
+
       </Routes>
     </Router>
   );

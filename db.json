@@ -37,13 +37,6 @@
       "rol": "user"
     },
     {
-      "id": "1fb6",
-      "nombre": "francisco",
-      "usuario": "zamora",
-      "password": "zamora123",
-      "rol": "cliente"
-    },
-    {
       "id": "68c3",
       "nombre": "juan suarez",
       "usuario": "juansuarez2025",
@@ -51,10 +44,10 @@
       "rol": "cliente"
     },
     {
-      "id": "68e6",
-      "nombre": "leonel sanagua",
-      "usuario": "leosanagua",
-      "password": "leosanagua",
+      "id": "a5b9",
+      "nombre": "camila rodriguez",
+      "usuario": "cami123",
+      "password": "cami123",
       "rol": "cliente"
     }
   ],

@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import "./FormCliente.css";
 
 // Formulario para agregar o editar un cliente
 const FormCliente = ({ onGuardar, clienteSeleccionado, onCancelar }) => {

@@ -2,7 +2,7 @@ import React from "react";
 
 const TablaClientes = ({ clientes = [] }) => {
   return (
-    <table>
+    <table className="tabla-clientes">
       <thead>
         <tr>
           <th>Nombre</th>

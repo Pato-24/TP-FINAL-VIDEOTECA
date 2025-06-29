@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import "../components/TablaClientes.css";
 
 const AdminClientes = () => {
   const [clientes, setClientes] = useState([]);
@@ -44,9 +45,9 @@ const AdminClientes = () => {
   if (loading) return <div>Cargando clientes...</div>;
 
   return (
-    <div>
-      <h2>Administración de Clientes</h2>
-      <table>
+    <div className="admin-clientes-bg">
+      <h2 className="admin-clientes-title">Administración de Clientes</h2>
+      <table className="tabla-clientes">
         <thead>
           <tr>
             <th>Nombre</th>

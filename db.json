@@ -6,7 +6,7 @@
       "password": "1111",
       "rol": "admin"
     },
-        {
+    {
       "id": "2",
       "usuario": "emanuel",
       "password": "2222",
@@ -42,25 +42,29 @@
       "nombre": "Benjamin",
       "apellido": "Sanagua",
       "email": "benja@gmail.com",
-      "foto": ""
+      "foto": "",
+      "id": "167c"
     },
     {
       "nombre": "Emanuel",
       "apellido": "Ybarra",
       "email": "emanuel@gmail.com",
-      "foto": ""
+      "foto": "",
+      "id": "3ec0"
     },
     {
       "nombre": "Patricia",
       "apellido": "Arguello",
       "email": "patricia@gmail.com",
-      "foto": ""
+      "foto": "",
+      "id": "36ab"
     },
-        {
+    {
       "nombre": "cristian",
       "apellido": "De la Cruz",
       "email": "cristian@gmail.com",
-      "foto": ""
+      "foto": "",
+      "id": "d7ee"
     }
   ],
   "peliculas": [
@@ -120,13 +124,20 @@
       "sinopsis": "En esta nueva entrega de la saga Destino Final, un grupo de amigos escapa de un accidente mortal, pero la Muerte no se detiene y comienza a cobrarse sus vidas una por una. Con giros inesperados y escenas impactantes, esta película promete mantener a los espectadores al borde de sus asientos.",
       "imagenUrl": "img/final_destination.jpg"
     },
-{
+    {
       "id": "8",
       "titulo": "Mision Imposible - Sentencia Final",
       "genero": "Acción, Aventura, Espionaje",
       "anio": 2025,
       "sinopsis": "Ethan Hunt y su equipo de la IMF se enfrentan a una nueva amenaza global que pone en peligro la seguridad del mundo. Con escenas de acción trepidantes y un guion lleno de sorpresas, esta entrega promete ser una de las más emocionantes de la saga.",
       "imagenUrl": "img/mission_impossible.jpg"
+    },
+    {
+      "id": "8d29",
+      "titulo": "deathpool",
+      "genero": "ficcion",
+      "anio": "2023",
+      "sinopsis": "kooooo"
     }
   ],
   "clientes": [

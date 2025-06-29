@@ -20,7 +20,11 @@ const TablaPeliculas = ({ peliculas, onEditar, onEliminar }) => {
             <td>{peli.genero}</td>
             <td>{peli.anio}</td>
             <td>{peli.sinopsis}</td>
-            <td><img src={peli.imagenUrl}></img></td>
+            <td><img
+                  src={peli.imagenUrl}
+                  alt={peli.titulo}
+                  style={{ width: "80px", height: "120px", objectFit: "cover", borderRadius: "8px" }}
+/></td>
             <td>
               <button onClick={() => onEditar(peli)}>Editar</button>
               <button onClick={() => onEliminar(peli.id)}>Eliminar</button>

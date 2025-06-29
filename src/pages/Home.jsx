@@ -3,13 +3,17 @@ import axios from "axios";
 
 const Home = () => {
   const [peliculas, setPeliculas] = useState([]);
+  const [busqueda, setBusqueda] = useState("");
 
   useEffect(() => {
     axios.get("http://localhost:3001/peliculas").then((res) => {
       setPeliculas(res.data);
     });
   }, []);
-
+  const peliculasFiltradas = peliculas.filter(p =>
+    p.titulo.toLowerCase().includes(busqueda.toLowerCase()) ||
+    p.genero.toLowerCase().includes(busqueda.toLowerCase())
+);
   return (
     <div
       className="min-vh-100 py-5"
@@ -29,11 +33,18 @@ const Home = () => {
       >
         Videoteca Trancas - Catálogo de Películas
       </h1>
+      <input
+        type="text"
+        placeholder="Buscar película..."
+        value={busqueda}
+        onChange={e => setBusqueda(e.target.value)}
+        className="form-control mb-4"
+      />
       <div className="alert alert-warning text-center fw-bold mb-5 animate__animated animate__fadeIn">
         Para alquilar alguna de estas películas, debes registrarte o iniciar sesión.
       </div>
       <div className="row g-4 justify-content-center">
-        {peliculas.map((peli, idx) => (
+        {peliculasFiltradas.map((peli, idx) => (
           <div
             className="col-12 col-sm-6 col-md-4 col-lg-3 d-flex"
             key={peli.id}
@@ -96,5 +107,6 @@ const Home = () => {
     </div>
   );
 };
+
 
 export default Home;

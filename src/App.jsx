@@ -1,39 +1,64 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import ProtectedRoute from "./components/ProtectedRoute";
+import Peliculas from "./pages/Peliculas";
+import Clientes from "./pages/Clientes";
+import Alquileres from "./pages/Alquileres";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
-import AdminPeliculas from "./pages/AdminPeliculas";
-import AdminClientes from "./pages/AdminClientes";
-import AdminAlquileres from "./pages/AdminAlquileres";
-import HistorialClienteRoute from "./routes/HistorialCliente";
-import ProtectedRoute from "./routes/protectedroute";
-import Navbar from "./components/Navbar";
+import Navbar from "./components/Navbar"; // Asegúrate de tener este componente
 import Integrantes from "./pages/Integrantes";
 import Registro from "./pages/Registro";
+// Componente principal de la aplicación
 function App() {
   return (
-    <Router>
+    <BrowserRouter>
+      {/* Navbar visible en todas las páginas */}
       <Navbar />
       <Routes>
+        {/* Redirección por defecto a /home */}
+        <Route path="/" element={<Navigate to="/home" />} />
+
+        {/* Ruta pública: Home */}
         <Route path="/home" element={<Home />} />
+
+        {/* Ruta pública: Login */}
         <Route path="/login" element={<Login />} />
+        {/* Ruta pública: Registro */}
+        <Route path="/registro" element={<Registro />} />
+
+        {/* Ruta pública: Integrantes */}
+        <Route path="/integrantes" element={<Integrantes />} />
+
+        {/* Rutas protegidas solo para admin */}
         <Route
-          path="/admin"
+          path="/peliculas"
           element={
-            <ProtectedRoute>
-              <AdminPeliculas />
+            <ProtectedRoute roles={["admin"]}>
+              <Peliculas />
             </ProtectedRoute>
           }
         />
-        <Route path="/clientes" element={<AdminClientes />} />
-        <Route path="/alquileres" element={<AdminAlquileres />} />
-        <Route path="/clientes/:clienteId/historial" element={<HistorialClienteRoute />} />
-        <Route path="/peliculas" element={<AdminPeliculas />} />
-        <Route path="/integrantes" element={<Integrantes />} />
-        <Route path="/registro" element={<Registro />} />
+        <Route
+          path="/clientes"
+          element={
+            <ProtectedRoute roles={["admin"]}>
+              <Clientes />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/alquileres"
+          element={
+            <ProtectedRoute roles={["admin"]}>
+              <Alquileres />
+            </ProtectedRoute>
+          }
+        />
+        {/* Ruta para cualquier otra dirección no encontrada */}
+        <Route path="*" element={<h2>Página no encontrada</h2>} />
       </Routes>
-    </Router>
+    </BrowserRouter>
   );
 }
 
 export default App;
-

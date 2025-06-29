@@ -56,38 +56,45 @@
       "usuario": "leosanagua",
       "password": "leosanagua",
       "rol": "cliente"
+    },
+    {
+      "id": "059e",
+      "usuario": "pedro",
+      "password": "0000",
+      "email": "pedro@gmail.com",
+      "rol": "user"
     }
   ],
   "integrantes": [
-  {
-    "nombre": "Benjamin",
-    "apellido": "Sanagua",
-    "email": "benja@gmail.com",
-    "foto": "img/descarga (1).jpg",
-    "id": "a0a2"
-  },
-  {
-    "nombre": "Emanuel",
-    "apellido": "Ybarra",
-    "email": "emanuel@gmail.com",
-    "foto": "img/descarga (2).jpg",
-    "id": "7c03"
-  },
-  {
-    "nombre": "Patricia",
-    "apellido": "Argüello",
-    "email": "patricia@gmail.com",
-    "foto": "img/descarga (3).jpg",
-    "id": "ad9d"
-  },
-  {
-    "nombre": "cristian",
-    "apellido": "De la Cruz",
-    "email": "cristian@gmail.com",
-    "foto": "img/descarga.jpg",
-    "id": "82e1"
-  }
-],
+    {
+      "nombre": "Benjamin",
+      "apellido": "Sanagua",
+      "email": "benja@gmail.com",
+      "foto": "img/descarga (1).jpg",
+      "id": "a0a2"
+    },
+    {
+      "nombre": "Emanuel",
+      "apellido": "Ybarra",
+      "email": "emanuel@gmail.com",
+      "foto": "img/descarga (2).jpg",
+      "id": "7c03"
+    },
+    {
+      "nombre": "Patricia",
+      "apellido": "Argüello",
+      "email": "patricia@gmail.com",
+      "foto": "img/descarga (3).jpg",
+      "id": "ad9d"
+    },
+    {
+      "nombre": "cristian",
+      "apellido": "De la Cruz",
+      "email": "cristian@gmail.com",
+      "foto": "img/descarga.jpg",
+      "id": "82e1"
+    }
+  ],
   "peliculas": [
     {
       "id": "1",
@@ -153,7 +160,6 @@
       "sinopsis": "Ethan Hunt y su equipo de la IMF se enfrentan a una nueva amenaza global que pone en peligro la seguridad del mundo. Con escenas de acción trepidantes y un guion lleno de sorpresas, esta entrega promete ser una de las más emocionantes de la saga.",
       "imagenUrl": "/img/mission_impossible.jpg"
     }
-
   ],
   "clientes": [
     {
@@ -179,6 +185,12 @@
       "nombre": "Laura Fernández",
       "contacto": "laura@gmail.com",
       "telefono": "444987654"
+    },
+    {
+      "id": "4fb1",
+      "nombre": "pedro",
+      "contacto": "pedro@gmail.com",
+      "telefono": "123456"
     }
   ],
   "alquileres": [
@@ -213,6 +225,14 @@
       "fechaInicio": "2025-05-10",
       "fechaFin": "2025-05-17",
       "devuelto": true
+    },
+    {
+      "id": "cb11",
+      "clienteId": "4fb1",
+      "peliculaId": "7",
+      "fechaInicio": "2025-06-29",
+      "fechaFin": "2025-06-30",
+      "devuelto": false
     }
   ]
-} 
+}

@@ -6,7 +6,7 @@
       "password": "1111",
       "rol": "admin"
     },
-        {
+    {
       "id": "2",
       "usuario": "emanuel",
       "password": "2222",
@@ -35,6 +35,27 @@
       "usuario": "cliente2",
       "password": "abcd",
       "rol": "user"
+    },
+    {
+      "id": "68c3",
+      "nombre": "juan suarez",
+      "usuario": "juansuarez2025",
+      "password": "juansuarez2025",
+      "rol": "cliente"
+    },
+    {
+      "id": "a5b9",
+      "nombre": "camila rodriguez",
+      "usuario": "cami123",
+      "password": "cami123",
+      "rol": "cliente"
+    },
+    {
+      "id": "059e",
+      "usuario": "pedro",
+      "password": "0000",
+      "email": "pedro@gmail.com",
+      "rol": "user"
     }
   ],
   "integrantes": [
@@ -42,25 +63,29 @@
       "nombre": "Benjamin",
       "apellido": "Sanagua",
       "email": "benja@gmail.com",
-      "foto": "img/descarga (1).jpg"
+      "foto": "img/descarga (1).jpg",
+      "id": "a0a2"
     },
     {
       "nombre": "Emanuel",
       "apellido": "Ybarra",
       "email": "emanuel@gmail.com",
-      "foto": "img/descarga (2).jpg"
+      "foto": "img/descarga (2).jpg",
+      "id": "7c03"
     },
     {
       "nombre": "Patricia",
       "apellido": "Argüello",
       "email": "patricia@gmail.com",
-      "foto": "img/descarga (3).jpg"
+      "foto": "img/descarga (3).jpg",
+      "id": "ad9d"
     },
-        {
+    {
       "nombre": "cristian",
       "apellido": "De la Cruz",
       "email": "cristian@gmail.com",
-      "foto": "img/descarga.jpg"
+      "foto": "img/descarga.jpg",
+      "id": "82e1"
     }
   ],
   "peliculas": [
@@ -70,7 +95,7 @@
       "genero": "Fantasía, Acción, Infantil",
       "anio": 2025,
       "sinopsis": "Minecraft sigue a un grupo de aventureros que deberán enfrentarse a un peligroso Ender Dragon que amenaza con destruir su mundo..",
-      "imagenUrl": "img/minecraft.jpg"
+      "imagenUrl": "/img/minecraft.jpg"
     },
     {
       "id": "2",
@@ -78,7 +103,7 @@
       "genero": "Terror",
       "anio": 2025,
       "sinopsis": "Una nueva vuelta de tuerca al personaje de Peter Pan que reinventa este cuento clásico en una versión mucho más oscura y violenta.",
-      "imagenUrl": "img/Peter-Pan.jpg"
+      "imagenUrl": "/img/Peter-Pan.jpg"
     },
     {
       "id": "3",
@@ -86,7 +111,7 @@
       "genero": "Terror, Ciencia ficción",
       "anio": 2025,
       "sinopsis": "Han pasado casi tres décadas desde que el virus de la rabia escapó de un laboratorio de armas biológicas, y ahora, todavía bajo una cuarentena brutalmente impuesta, algunos han encontrado formas de existir en medio de los infectados.",
-      "imagenUrl": "img/28-anos-despues.jpg"
+      "imagenUrl": "/img/28-anos-despues.jpg"
     },
     {
       "id": "4",
@@ -94,7 +119,7 @@
       "genero": "Acción, Aventuras, Superhéroes, Marvel",
       "anio": 2025,
       "sinopsis": "Sam se encuentra en medio de un incidente internacional. Debe descubrir la razón detrás de un nefasto complot global antes de que la verdadera mente maestra tenga al mundo entero viendo rojo.",
-      "imagenUrl": "img/CAPITAN-AMERICA.jpg"
+      "imagenUrl": "/img/CAPITAN-AMERICA.jpg"
     },
     {
       "id": "5",
@@ -102,7 +127,7 @@
       "genero": "Aventuras, Fantástico, Infantil",
       "anio": 2025,
       "sinopsis": "Shipo, un joven vikingo, desafía las tradiciones de su pueblo al entablar una inesperada amistad con Desdentao, un dragón Furia Nocturna. Esta relación no solo cambiará su vida, sino también el destino de toda su comunidad.",
-      "imagenUrl": "img/dragon.jpg"
+      "imagenUrl": "/img/dragon.jpg"
     },
     {
       "id": "6",
@@ -110,7 +135,7 @@
       "genero": "Fantasía, Aventuras, Disney, Infantil",
       "anio": 2025,
       "sinopsis": "La icónica historia de Blancanieves regresa a la gran pantalla en esta adaptación de acción real. Rachel Zegler interpreta a Blancanieves, la princesa con un corazón puro cuya belleza y bondad desencadenan la envidia de su madrastra, la Reina Malvada, encarnada por Gal Gadot.",
-      "imagenUrl": "img/blancanieves.jpg"
+      "imagenUrl": "/img/blancanieves.jpg"
     },
     {
       "id": "7",
@@ -118,15 +143,15 @@
       "genero": "Horror, Suspenso",
       "anio": 2025,
       "sinopsis": "En esta nueva entrega de la saga Destino Final, un grupo de amigos escapa de un accidente mortal, pero la Muerte no se detiene y comienza a cobrarse sus vidas una por una. Con giros inesperados y escenas impactantes, esta película promete mantener a los espectadores al borde de sus asientos.",
-      "imagenUrl": "img/final_destination.jpg"
+      "imagenUrl": "/img/final_destination.jpg"
     },
-{
+    {
       "id": "8",
       "titulo": "Mision Imposible - Sentencia Final",
       "genero": "Acción, Aventura, Espionaje",
       "anio": 2025,
       "sinopsis": "Ethan Hunt y su equipo de la IMF se enfrentan a una nueva amenaza global que pone en peligro la seguridad del mundo. Con escenas de acción trepidantes y un guion lleno de sorpresas, esta entrega promete ser una de las más emocionantes de la saga.",
-      "imagenUrl": "img/mission_impossible.jpg"
+      "imagenUrl": "/img/mission_impossible.jpg"
     }
   ],
   "clientes": [
@@ -153,6 +178,12 @@
       "nombre": "Laura Fernández",
       "contacto": "laura@gmail.com",
       "telefono": "444987654"
+    },
+    {
+      "id": "4fb1",
+      "nombre": "pedro",
+      "contacto": "pedro@gmail.com",
+      "telefono": "123456"
     }
   ],
   "alquileres": [
@@ -187,6 +218,14 @@
       "fechaInicio": "2025-05-10",
       "fechaFin": "2025-05-17",
       "devuelto": true
+    },
+    {
+      "id": "cb11",
+      "clienteId": "4fb1",
+      "peliculaId": "7",
+      "fechaInicio": "2025-06-29",
+      "fechaFin": "2025-06-30",
+      "devuelto": false
     }
   ]
 }

@@ -1,67 +1,61 @@
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
 import axios from "axios";
-import "../components/Login.css"; // Reutilizamos los estilos del login si querés
+import { useNavigate } from "react-router-dom";
 
 const Registro = () => {
-  const [nombre, setNombre] = useState("");
   const [usuario, setUsuario] = useState("");
   const [password, setPassword] = useState("");
-  const [mensaje, setMensaje] = useState("");
+  const [email, setEmail] = useState("");
   const [error, setError] = useState("");
+  const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
 
   const handleRegistro = async (e) => {
     e.preventDefault();
-    setMensaje("");
     setError("");
-
+    setLoading(true);
     try {
-      const { data: usuarios } = await axios.get("http://localhost:3001/usuarios");
-      const existe = usuarios.find((u) => u.usuario === usuario);
-
+      // Verifica si el usuario ya existe
+      const { data } = await axios.get("http://localhost:3001/usuarios");
+      const existe = data.find((u) => u.usuario === usuario);
       if (existe) {
-        setError("El nombre de usuario ya está en uso");
+        setError("El usuario ya existe");
+        setLoading(false);
         return;
       }
-
-      const nuevoUsuario = {
-        nombre,
+      // Crea el nuevo usuario con rol "user"
+      await axios.post("http://localhost:3001/usuarios", {
         usuario,
         password,
-        rol: "cliente", // Podés cambiarlo si es necesario
-      };
-
-      await axios.post("http://localhost:3001/usuarios", nuevoUsuario);
-      setMensaje("BIENVENIDO A VIDEOTECA TRANCAS, AHORA SÍ PODÉS DISFRUTAR DE LAS MEJORES PELÍCULAS");
-
-      // Guardamos usuario en localStorage y redirigimos si querés
-      localStorage.setItem("usuario", JSON.stringify(nuevoUsuario));
-      setTimeout(() => navigate("/"), 2000);
-
+        email,
+        rol: "user"
+      });
+      alert("¡Registro exitoso! Bienvenido a Videoteca Trancas, ahora puedes disfrutar de las mejores películas");
+      navigate("/login");
     } catch (err) {
-      setError("No se pudo registrar. Intentá nuevamente.");
+      setError("Error al registrar usuario");
+    } finally {
+      setLoading(false);
     }
   };
 
   return (
-    <div className="login-container">
-      <form onSubmit={handleRegistro} className="login-form">
+    <div className="registro-container">
+      <form onSubmit={handleRegistro} className="registro-form">
         <h2>Registro</h2>
-        {mensaje && <p className="login-success">{mensaje}</p>}
-        {error && <p className="login-error">{error}</p>}
+        {error && <p className="registro-error">{error}</p>}
         <input
           type="text"
-          placeholder="Nombre completo"
-          value={nombre}
-          onChange={(e) => setNombre(e.target.value)}
+          placeholder="Usuario"
+          value={usuario}
+          onChange={(e) => setUsuario(e.target.value)}
           required
         />
         <input
-          type="text"
-          placeholder="Nombre de usuario"
-          value={usuario}
-          onChange={(e) => setUsuario(e.target.value)}
+          type="email"
+          placeholder="Email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
           required
         />
         <input
@@ -71,7 +65,15 @@ const Registro = () => {
           onChange={(e) => setPassword(e.target.value)}
           required
         />
-        <button type="submit">Registrarse</button>
+        <button type="submit" disabled={!usuario || !password || !email || loading}>
+          {loading ? "Registrando..." : "Registrarse"}
+        </button>
+        <p className="registro-link">
+          ¿Ya tienes cuenta?{" "}
+          <span onClick={() => navigate("/login")} className="link-login">
+            Inicia sesión
+          </span>
+        </p>
       </form>
     </div>
   );

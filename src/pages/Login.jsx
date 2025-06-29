@@ -21,8 +21,14 @@ const Login = () => {
       );
 
       if (user) {
-        localStorage.setItem("usuario", JSON.stringify(user));
-        navigate("/admin");
+        // Guarda el usuario logueado en localStorage
+        localStorage.setItem("usuarioLogueado", JSON.stringify(user));
+        // Redirige según el rol
+        if (user.rol === "admin") {
+          navigate("/peliculas");
+        } else {
+          navigate("/home");
+        }
       } else {
         setError("Usuario o contraseña incorrectos");
       }

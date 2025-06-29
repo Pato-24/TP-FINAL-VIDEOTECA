@@ -6,7 +6,7 @@
       "password": "1111",
       "rol": "admin"
     },
-        {
+    {
       "id": "2",
       "usuario": "emanuel",
       "password": "2222",
@@ -35,6 +35,27 @@
       "usuario": "cliente2",
       "password": "abcd",
       "rol": "user"
+    },
+    {
+      "id": "1fb6",
+      "nombre": "francisco",
+      "usuario": "zamora",
+      "password": "zamora123",
+      "rol": "cliente"
+    },
+    {
+      "id": "68c3",
+      "nombre": "juan suarez",
+      "usuario": "juansuarez2025",
+      "password": "juansuarez2025",
+      "rol": "cliente"
+    },
+    {
+      "id": "68e6",
+      "nombre": "leonel sanagua",
+      "usuario": "leosanagua",
+      "password": "leosanagua",
+      "rol": "cliente"
     }
   ],
   "integrantes": [
@@ -42,25 +63,29 @@
       "nombre": "Benjamin",
       "apellido": "Sanagua",
       "email": "benja@gmail.com",
-      "foto": "img/descarga (1).jpg"
+      "foto": "img/descarga (1).jpg",
+      "id": "a0a2"
     },
     {
       "nombre": "Emanuel",
       "apellido": "Ybarra",
       "email": "emanuel@gmail.com",
-      "foto": "img/descarga (2).jpg"
+      "foto": "img/descarga (2).jpg",
+      "id": "7c03"
     },
     {
       "nombre": "Patricia",
       "apellido": "Argüello",
       "email": "patricia@gmail.com",
-      "foto": "img/descarga (3).jpg"
+      "foto": "img/descarga (3).jpg",
+      "id": "ad9d"
     },
-        {
+    {
       "nombre": "cristian",
       "apellido": "De la Cruz",
       "email": "cristian@gmail.com",
-      "foto": "img/descarga.jpg"
+      "foto": "img/descarga.jpg",
+      "id": "82e1"
     }
   ],
   "peliculas": [
@@ -120,7 +145,7 @@
       "sinopsis": "En esta nueva entrega de la saga Destino Final, un grupo de amigos escapa de un accidente mortal, pero la Muerte no se detiene y comienza a cobrarse sus vidas una por una. Con giros inesperados y escenas impactantes, esta película promete mantener a los espectadores al borde de sus asientos.",
       "imagenUrl": "img/final_destination.jpg"
     },
-{
+    {
       "id": "8",
       "titulo": "Mision Imposible - Sentencia Final",
       "genero": "Acción, Aventura, Espionaje",

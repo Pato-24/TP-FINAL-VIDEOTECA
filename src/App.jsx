@@ -8,6 +8,7 @@ import HistorialClienteRoute from "./routes/HistorialCliente";
 import ProtectedRoute from "./routes/protectedroute";
 import Navbar from "./components/Navbar";
 import Integrantes from "./pages/Integrantes";
+import Registro from "./pages/Registro";
 function App() {
   return (
     <Router>
@@ -28,9 +29,11 @@ function App() {
         <Route path="/clientes/:clienteId/historial" element={<HistorialClienteRoute />} />
         <Route path="/peliculas" element={<AdminPeliculas />} />
         <Route path="/integrantes" element={<Integrantes />} />
+        <Route path="/registro" element={<Registro />} />
       </Routes>
     </Router>
   );
 }
 
 export default App;
+

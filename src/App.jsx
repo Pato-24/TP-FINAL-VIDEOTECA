@@ -7,7 +7,7 @@ import AdminAlquileres from "./pages/AdminAlquileres";
 import HistorialClienteRoute from "./routes/HistorialCliente";
 import ProtectedRoute from "./routes/protectedroute";
 import Navbar from "./components/Navbar";
-
+import Integrantes from "./pages/Integrantes";
 function App() {
   return (
     <Router>
@@ -27,6 +27,7 @@ function App() {
         <Route path="/alquileres" element={<AdminAlquileres />} />
         <Route path="/clientes/:clienteId/historial" element={<HistorialClienteRoute />} />
         <Route path="/peliculas" element={<AdminPeliculas />} />
+        <Route path="/integrantes" element={<Integrantes />} />
       </Routes>
     </Router>
   );

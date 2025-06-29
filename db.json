@@ -42,29 +42,45 @@
       "nombre": "Benjamin",
       "apellido": "Sanagua",
       "email": "benja@gmail.com",
+<<<<<<< HEAD
       "foto": "",
       "id": "167c"
+=======
+      "foto": "img/descarga(1).jpg"
+>>>>>>> 97bc4e702f86cc1eb3c8bd663c2e8b75849314f1
     },
     {
       "nombre": "Emanuel",
       "apellido": "Ybarra",
       "email": "emanuel@gmail.com",
+<<<<<<< HEAD
       "foto": "",
       "id": "3ec0"
+=======
+      "foto": "img/descarga(2).jpg"
+>>>>>>> 97bc4e702f86cc1eb3c8bd663c2e8b75849314f1
     },
     {
       "nombre": "Patricia",
       "apellido": "Arguello",
       "email": "patricia@gmail.com",
+<<<<<<< HEAD
       "foto": "",
       "id": "36ab"
+=======
+      "foto": "img/descarga(3).jpg"
+>>>>>>> 97bc4e702f86cc1eb3c8bd663c2e8b75849314f1
     },
     {
       "nombre": "cristian",
       "apellido": "De la Cruz",
       "email": "cristian@gmail.com",
+<<<<<<< HEAD
       "foto": "",
       "id": "d7ee"
+=======
+      "foto": "img/descarga.jpg"
+>>>>>>> 97bc4e702f86cc1eb3c8bd663c2e8b75849314f1
     }
   ],
   "peliculas": [

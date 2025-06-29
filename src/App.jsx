@@ -5,10 +5,10 @@ import Clientes from "./pages/Clientes";
 import Alquileres from "./pages/Alquileres";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
-import Navbar from "./components/Navbar"; // Asegúrate de tener este componente
+import Navbar from "./components/Navbar";
 import Integrantes from "./pages/Integrantes";
 import Registro from "./pages/Registro";
-// Componente principal de la aplicación
+
 function App() {
   return (
     <BrowserRouter>
@@ -23,6 +23,7 @@ function App() {
 
         {/* Ruta pública: Login */}
         <Route path="/login" element={<Login />} />
+
         {/* Ruta pública: Registro */}
         <Route path="/registro" element={<Registro />} />
 
@@ -54,7 +55,8 @@ function App() {
             </ProtectedRoute>
           }
         />
-        {/* Ruta para cualquier otra dirección no encontrada */}
+
+        {/* Ruta comodín para página no encontrada */}
         <Route path="*" element={<h2>Página no encontrada</h2>} />
       </Routes>
     </BrowserRouter>

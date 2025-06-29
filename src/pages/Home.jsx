@@ -27,7 +27,7 @@ const Home = () => {
           textShadow: "2px 2px 8px #0008",
         }}
       >
-        Videoteca Trancas - Catálogo de Películas
+        Catálogo de Películas
       </h1>
       <div className="alert alert-warning text-center fw-bold mb-5 animate__animated animate__fadeIn">
         Para alquilar alguna de estas películas, debes registrarte o iniciar sesión.

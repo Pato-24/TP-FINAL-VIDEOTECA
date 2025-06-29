@@ -8,9 +8,13 @@ import HistorialClienteRoute from "./routes/HistorialCliente";
 import ProtectedRoute from "./routes/protectedroute";
 import Navbar from "./components/Navbar";
 import Integrantes from "./pages/Integrantes";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
+
 function App() {
   return (
     <Router>
+      <Header />
       <Navbar />
       <Routes>
         <Route path="/home" element={<Home />} />
@@ -29,6 +33,7 @@ function App() {
         <Route path="/peliculas" element={<AdminPeliculas />} />
         <Route path="/integrantes" element={<Integrantes />} />
       </Routes>
+      <Footer />
     </Router>
   );
 }

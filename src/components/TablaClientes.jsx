@@ -1,21 +1,31 @@
-import React from "react";
-
-const TablaClientes = ({ clientes = [] }) => {
+// Componente de tabla para mostrar la lista de clientes
+// Recibe por props: 
+// - clientes: array de clientes a mostrar
+// - onEditar: función para editar un cliente
+// - onEliminar: función para eliminar un cliente
+const TablaClientes = ({ clientes, onEditar, onEliminar }) => {
   return (
     <table className="tabla-clientes">
       <thead>
         <tr>
           <th>Nombre</th>
-          <th>Email</th>
+          <th>Contacto</th>
           <th>Teléfono</th>
+          <th>Acciones</th>
         </tr>
       </thead>
       <tbody>
-        {clientes.map((cliente) => (
-          <tr key={cliente.id}>
-            <td>{cliente.nombre}</td>
-            <td>{cliente.email}</td>
-            <td>{cliente.telefono}</td>
+        {clientes.map((cli) => (
+          <tr key={cli.id}>
+            <td>{cli.nombre}</td>
+            <td>{cli.contacto}</td>
+            <td>{cli.telefono}</td>
+            <td>
+              <button onClick={() => onEditar(cli)}>Editar</button>
+              <button onClick={() => onEliminar(cli.id)}>Eliminar</button>
+              {/* Botón para ver historial */}
+              <button onClick={() => onVerHistorial(cli)}>Ver historial</button>
+            </td>
           </tr>
         ))}
       </tbody>
@@ -24,4 +34,3 @@ const TablaClientes = ({ clientes = [] }) => {
 };
 
 export default TablaClientes;
-// Compare this snippet from src/pages/AdminAlquileres.jsx:

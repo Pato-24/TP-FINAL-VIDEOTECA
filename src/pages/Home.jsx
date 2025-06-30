@@ -31,7 +31,7 @@ const Home = () => {
           textShadow: "2px 2px 8px #0008",
         }}
       >
-        Videoteca Trancas - Catálogo de Películas
+        Catálogo de Películas
       </h1>
       <input
         type="text"

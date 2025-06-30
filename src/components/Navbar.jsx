@@ -1,5 +1,6 @@
 import React from "react";
 import { Link, useNavigate } from "react-router-dom";
+import "./NavbarCustom.css";
 
 const Navbar = () => {
   const user = JSON.parse(localStorage.getItem("usuarioLogueado"));
@@ -12,33 +13,32 @@ const Navbar = () => {
   };
 
   return (
-    <nav style={{ padding: "10px", background: "#eee" }}>
-      <ul style={{ display: "flex", listStyle: "none", gap: "20px", margin: 0, padding: 0 }}>
+    <nav className="navbar-custom">
+      <ul className="navbar-list">
         <li>
-          <Link to="/home">Inicio</Link>
+          <Link className="navbar-link" to="/home">Inicio</Link>
         </li>
         {/* Solo muestra estos enlaces si el usuario es admin */}
         {user && user.rol === "admin" && (
           <>
             <li>
-              <Link to="/peliculas">Películas</Link>
+              <Link className="navbar-link" to="/peliculas">Películas</Link>
             </li>
             <li>
-              <Link to="/clientes">Clientes</Link>
+              <Link className="navbar-link" to="/clientes">Clientes</Link>
             </li>
             <li>
-              <Link to="/alquileres">Alquileres</Link>
+              <Link className="navbar-link" to="/alquileres">Alquileres</Link>
             </li>
           </>
         )}
-        {/* Enlace a Integrantes siempre visible */}
         <li>
-          <Link to="/integrantes">Integrantes</Link>
+          <Link className="navbar-link" to="/integrantes">Integrantes</Link>
         </li>
         {/* Si no hay usuario, muestra Login */}
         {!user && (
           <li>
-            <Link to="/login">Login</Link>
+            <Link className="navbar-link" to="/login">Login</Link>
           </li>
         )}
         {/* Si hay usuario, muestra botón de Cerrar sesión */}

@@ -5,6 +5,7 @@
 // - peliculas: array de películas para mostrar el título
 // - onEditar: función para editar un alquiler
 // - onEliminar: función para eliminar un alquiler
+import "./TablaAlquileres.css";
 const TablaAlquileres = ({ alquileres, clientes, peliculas, onEditar, onEliminar }) => {
   // Función para obtener el nombre del cliente por ID
   const getNombreCliente = (id) => {

@@ -5,14 +5,17 @@ import Clientes from "./pages/Clientes";
 import Alquileres from "./pages/Alquileres";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
-import Navbar from "./components/Navbar";
-import Integrantes from "./pages/Integrantes";
 import Registro from "./pages/Registro";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
+import Integrantes from "./pages/Integrantes";
+
 
 function App() {
   return (
     <BrowserRouter>
-      {/* Navbar visible en todas las páginas */}
+      <Header />
       <Navbar />
       <Routes>
         {/* Redirección por defecto a /home */}
@@ -59,6 +62,7 @@ function App() {
         {/* Ruta comodín para página no encontrada */}
         <Route path="*" element={<h2>Página no encontrada</h2>} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   );
 }

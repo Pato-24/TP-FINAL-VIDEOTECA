@@ -1,3 +1,5 @@
+import "./TablaClientes.css";
+
 // Componente de tabla para mostrar la lista de clientes
 // Recibe por props: 
 // - clientes: array de clientes a mostrar

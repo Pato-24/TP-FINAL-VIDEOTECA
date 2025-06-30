@@ -29,8 +29,9 @@ const FormPelicula = ({ onGuardar, peliculaSeleccionada, onCancelar }) => {
   // Maneja el envío del formulario (agregar o editar)
   const handleSubmit = (e) => {
     e.preventDefault();
-    onGuardar(pelicula); // Llama a la función recibida por props para guardar
-    setPelicula({ titulo: "", genero: "", anio: "", sinopsis: "", imagenUrl: "" }); // Limpia el formulario
+    onGuardar(pelicula);
+    setPelicula({ titulo: "", genero: "", anio: "", sinopsis: "", imagenUrl: "" });
+    if (peliculaSeleccionada && onCancelar) onCancelar();
   };
 
   return (

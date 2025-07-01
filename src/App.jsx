@@ -22,16 +22,10 @@ function App() {
         {/* Redirección por defecto a /home */}
         <Route path="/" element={<Navigate to="/home" />} />
 
-        {/* Ruta pública: Home */}
+        {/* Rutas públicas */}
         <Route path="/home" element={<Home />} />
-
-        {/* Ruta pública: Login */}
         <Route path="/login" element={<Login />} />
-
-        {/* Ruta pública: Registro */}
         <Route path="/registro" element={<Registro />} />
-
-        {/* Ruta pública: Integrantes */}
         <Route path="/integrantes" element={<Integrantes />} />
 
         {/* Rutas protegidas solo para admin */}
@@ -59,9 +53,16 @@ function App() {
             </ProtectedRoute>
           }
         />
-
-        {/* Ruta comodín para página no encontrada */}
-        <Route path="*" element={<h2>Página no encontrada</h2>} />
+         <Route
+          path="/usuarios" 
+          element={
+            <ProtectedRoute roles={["admin"]}>
+              <Usuarios />
+            </ProtectedRoute>
+          }
+        />
+          {/* Ruta comodín para página no encontrada */}
+        <Route path="*" element={<h2 style={{ textAlign: "center" }}>Página no encontrada</h2>} />
       </Routes>
       <Footer />
     </BrowserRouter>

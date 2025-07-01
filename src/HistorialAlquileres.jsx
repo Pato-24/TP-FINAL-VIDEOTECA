@@ -5,7 +5,7 @@ import React from "react";
 const HistorialAlquileres = ({ alquileres, peliculas, onCerrar }) => {
   // Función para obtener el título de la película por ID
   const getTituloPelicula = (id) => {
-    const peli = peliculas.find(p => String(p.id) === String(id));
+    const peli = peliculas.find((p) => String(p.id) === String(id));
     return peli ? peli.titulo : "Desconocida";
   };
 

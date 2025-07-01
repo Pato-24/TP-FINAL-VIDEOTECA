@@ -1,19 +1,50 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
+import { addAlquiler } from "../services/alquileres"; // importa tu servicio
 
 const Home = () => {
   const [peliculas, setPeliculas] = useState([]);
   const [busqueda, setBusqueda] = useState("");
+  const [user, setUser] = useState(null);
+  const navigate = useNavigate();
 
   useEffect(() => {
     axios.get("http://localhost:3001/peliculas").then((res) => {
       setPeliculas(res.data);
     });
   }, []);
+  useEffect(() => {
+    const usuarioGuardado = localStorage.getItem("usuarioLogueado");
+    if (usuarioGuardado) {
+      setUser(JSON.parse(usuarioGuardado));
+    }
+  }, []);
   const peliculasFiltradas = peliculas.filter(p =>
     p.titulo.toLowerCase().includes(busqueda.toLowerCase()) ||
     p.genero.toLowerCase().includes(busqueda.toLowerCase())
 );
+  const handleAlquilar = async (pelicula) => {
+    // Genera fechas (puedes personalizar)
+    const hoy = new Date();
+    const fechaInicio = hoy.toISOString().slice(0, 10);
+    const fechaFin = new Date(hoy.getTime() + 7 * 24 * 60 * 60 * 1000).toISOString().slice(0, 10);
+
+    // Crea el objeto alquiler
+    const nuevoAlquiler = {
+      clienteId: user.id,
+      peliculaId: pelicula.id,
+      fechaInicio,
+      fechaFin,
+      devuelto: false
+    };
+
+    // Guarda el alquiler en la base de datos
+    await addAlquiler(nuevoAlquiler);
+
+    // Redirige a la página de gracias
+    navigate("/gracias", { state: { titulo: pelicula.titulo } });
+  };
   return (
     <div
       className="min-vh-100 py-5"
@@ -99,6 +130,14 @@ const Home = () => {
                 >
                   {peli.sinopsis}
                 </div>
+                {user && user.rol === "cliente" && (
+                  <button
+                    className="btn btn-success mt-2"
+                    onClick={() => handleAlquilar(peli)}
+                  >
+                    Alquilar
+                  </button>
+                )}
               </div>
             </div>
           </div>

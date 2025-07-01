@@ -11,7 +11,7 @@ import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Integrantes from "./pages/Integrantes";
 import Usuarios from "./pages/Usuarios";
-
+import Gracias from "./pages/Gracias";
 
 function App() {
   return (
@@ -27,6 +27,9 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/registro" element={<Registro />} />
         <Route path="/integrantes" element={<Integrantes />} />
+
+        {/* Ruta pública: Gracias */}
+        <Route path="/gracias" element={<Gracias />} />
 
         {/* Rutas protegidas solo para admin */}
         <Route

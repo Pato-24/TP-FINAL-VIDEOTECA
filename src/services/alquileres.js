@@ -1,13 +1,13 @@
 import axios from "axios";
 
 // URL base para la entidad alquileres en el servidor JSON
-const API = "http://localhost:3001/alquileres";
+const API_URL = "http://localhost:3001/alquileres";
 
 // Trae todos los alquileres (GET)
 export const getAlquileres = () => axios.get(API);
 
 // Agrega un nuevo alquiler (POST)
-export const addAlquiler = (data) => axios.post(API, data);
+export const addAlquiler = (alquiler) => axios.post(API_URL, alquiler);
 
 // Edita un alquiler existente por ID (PUT)
 export const editAlquiler = (id, data) => axios.put(`${API}/${id}`, data);

@@ -10,6 +10,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Integrantes from "./pages/Integrantes";
+import Usuarios from "./pages/Usuarios";
 
 
 function App() {

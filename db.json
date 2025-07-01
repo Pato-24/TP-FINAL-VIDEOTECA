@@ -28,13 +28,13 @@
       "id": "5",
       "usuario": "cliente1",
       "password": "5678",
-      "rol": "user"
+      "rol": "cliente"
     },
     {
       "id": "6",
       "usuario": "cliente2",
       "password": "abcd",
-      "rol": "user"
+      "rol": "cliente"
     },
     {
       "id": "68c3",

@@ -12,8 +12,7 @@ const Clientes = () => {
   const [alquileres, setAlquileres] = useState([]);
   const [peliculas, setPeliculas] = useState([]);
   const [clienteSeleccionado, setClienteSeleccionado] = useState(null);
-  const [mostrarHistorial, setMostrarHistorial] = useState(false);
-
+  const [clienteHistorial, setClienteHistorial] = useState(null);
 
   // Carga clientes, alquileres y películas
   const cargarDatos = async () => {
@@ -88,13 +87,13 @@ const Clientes = () => {
         onVerHistorial={handleVerHistorial}
       />
       {/* Muestra el historial si hay un cliente seleccionado */}
-      {mostrarHistorial && (
+      {clienteHistorial && (
         <HistorialAlquileres
-        alquileres={alquileres.filter(a => String(a.clienteId) === String(clienteSeleccionado.id))}
-        peliculas={peliculas}
-        onCerrar={() => setMostrarHistorial(false)}
-      />
-)}
+          alquileres={alquileres.filter(a => String(a.clienteId) === String(clienteHistorial.id))}
+          peliculas={peliculas}
+          onCerrar={handleCerrarHistorial}
+        />
+      )}
     </div>
   );
 };

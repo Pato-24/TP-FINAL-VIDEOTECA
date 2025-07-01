@@ -267,6 +267,14 @@
       "fechaInicio": "2025-07-01",
       "fechaFin": "2025-07-08",
       "devuelto": false
+    },
+    {
+      "id": "e255",
+      "clienteId": "a5b9",
+      "peliculaId": "4",
+      "fechaInicio": "2025-07-01",
+      "fechaFin": "2025-07-08",
+      "devuelto": false
     }
   ]
 }

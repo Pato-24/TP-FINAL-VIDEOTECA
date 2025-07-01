@@ -55,7 +55,8 @@
       "usuario": "pedro",
       "password": "0000",
       "email": "pedro@gmail.com",
-      "rol": "user"
+      "rol": "cliente",
+      "nombre": "pedro rodriguez"
     },
     {
       "id": "2a52",

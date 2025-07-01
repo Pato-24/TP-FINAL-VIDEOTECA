@@ -83,19 +83,18 @@ const FormAlquiler = ({ onGuardar, alquilerSeleccionado, onCancelar, clientes, p
       {/* Fecha de inicio */}
       <input
         type="date"
-        name="fechaInicio"
-        value={alquiler.fechaInicio}
-        onChange={handleChange}
-        required
+        value={fechaInicio}
+        min={new Date().toISOString().split("T")[0]} // Limita al día de hoy
+        onChange={(e) => setFechaInicio(e.target.value)}
       />
       {/* Fecha de fin */}
       <input
         type="date"
-        name="fechaFin"
-        value={alquiler.fechaFin}
-        onChange={handleChange}
-        required
+        value={fechaFin}
+        min={fechaInicio || new Date().toISOString().split("T")[0]} // Limita a la fecha de inicio o hoy
+        onChange={(e) => setFechaFin(e.target.value)}
       />
+
       {/* Checkbox devuelto */}
       <label>
         <input

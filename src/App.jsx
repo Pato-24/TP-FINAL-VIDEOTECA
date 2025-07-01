@@ -10,6 +10,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Integrantes from "./pages/Integrantes";
+import Gracias from "./pages/Gracias";
 
 
 function App() {
@@ -32,6 +33,9 @@ function App() {
 
         {/* Ruta pública: Integrantes */}
         <Route path="/integrantes" element={<Integrantes />} />
+
+        {/* Ruta pública: Gracias */}
+        <Route path="/gracias" element={<Gracias />} />
 
         {/* Rutas protegidas solo para admin */}
         <Route

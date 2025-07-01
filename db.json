@@ -65,6 +65,14 @@
       "password": "juli2025",
       "email": "juliana@gmail.com",
       "rol": "cliente"
+    },
+    {
+      "id": "5938",
+      "nombre": "Pablo Juarez",
+      "usuario": "pablo123",
+      "password": "pablo123",
+      "email": "pablo@gmail.com",
+      "rol": "cliente"
     }
   ],
   "integrantes": [

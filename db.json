@@ -73,6 +73,14 @@
       "password": "pablo123",
       "email": "pablo@gmail.com",
       "rol": "cliente"
+    },
+    {
+      "id": "cfa4",
+      "nombre": "José Ibarra",
+      "usuario": "pepe123",
+      "password": "pepe123",
+      "email": "pepe@gmail.com",
+      "rol": "cliente"
     }
   ],
   "integrantes": [

@@ -1,17 +1,19 @@
 import { useEffect, useState } from "react";
-import { getClientes, addCliente, editCliente, deleteCliente } from "../services/clientes";
+import HistorialAlquileres from "../components/HistorialAlquileres";
 import { getAlquileres } from "../services/alquileres";
 import { getPeliculas } from "../services/peliculas";
+import { getClientes, addCliente, editCliente, deleteCliente } from "../services/clientes";
 import TablaClientes from "../components/TablaClientes";
 import FormCliente from "../components/FormCliente";
-import HistorialAlquileres from "../components/HistorialAlquileres";
 
 const Clientes = () => {
   const [clientes, setClientes] = useState([]);
   const [editando, setEditando] = useState(null);
   const [alquileres, setAlquileres] = useState([]);
   const [peliculas, setPeliculas] = useState([]);
-  const [clienteHistorial, setClienteHistorial] = useState(null); // Cliente seleccionado para ver historial
+  const [clienteSeleccionado, setClienteSeleccionado] = useState(null);
+  const [mostrarHistorial, setMostrarHistorial] = useState(false);
+
 
   // Carga clientes, alquileres y películas
   const cargarDatos = async () => {
@@ -86,13 +88,13 @@ const Clientes = () => {
         onVerHistorial={handleVerHistorial}
       />
       {/* Muestra el historial si hay un cliente seleccionado */}
-      {clienteHistorial && (
+      {mostrarHistorial && (
         <HistorialAlquileres
-          alquileres={alquileresCliente}
-          peliculas={peliculas}
-          onCerrar={handleCerrarHistorial}
-        />
-      )}
+        alquileres={alquileres.filter(a => String(a.clienteId) === String(clienteSeleccionado.id))}
+        peliculas={peliculas}
+        onCerrar={() => setMostrarHistorial(false)}
+      />
+)}
     </div>
   );
 };

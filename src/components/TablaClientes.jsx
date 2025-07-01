@@ -5,7 +5,7 @@ import "./TablaClientes.css";
 // - clientes: array de clientes a mostrar
 // - onEditar: función para editar un cliente
 // - onEliminar: función para eliminar un cliente
-const TablaClientes = ({ clientes, onEditar, onEliminar }) => {
+const TablaClientes = ({ clientes, onEditar, onEliminar, onVerHistorial }) => {
   return (
     <table className="tabla-clientes">
       <thead>

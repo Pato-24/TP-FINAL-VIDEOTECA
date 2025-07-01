@@ -56,6 +56,14 @@
       "password": "0000",
       "email": "pedro@gmail.com",
       "rol": "user"
+    },
+    {
+      "id": "2a52",
+      "nombre": "Juliana Cruz",
+      "usuario": "juli",
+      "password": "juli2025",
+      "email": "juliana@gmail.com",
+      "rol": "cliente"
     }
   ],
   "integrantes": [

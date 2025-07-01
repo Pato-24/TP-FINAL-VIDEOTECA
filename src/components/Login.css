@@ -203,3 +203,17 @@
 .editar-form button[type="button"]:hover {
   background: #5a6268;
 }
+
+@media (max-width: 600px) {
+  .login-form {
+    padding: 16px;
+    max-width: 95vw;
+  }
+  .login-form h2 {
+    font-size: 1.2em;
+  }
+  .login-form input {
+    font-size: 0.9em;
+    padding: 10px 12px;
+  }
+}

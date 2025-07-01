@@ -67,6 +67,24 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+@media (max-width: 600px) {
+  body {
+    padding: 0;
+    min-width: 100vw;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  a {
+    font-size: 1rem;
+  }
+  button {
+    font-size: 1rem;
+    padding: 0.5em 1em;
+  }
+}
+
 .row {
   margin-right: 0 !important;
   margin-left: 0 !important;
@@ -74,6 +92,12 @@ button:focus-visible {
 .container,
 .container-fluid {
   overflow-x: hidden;
+}
+.contenedor {
+  width: 90%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 1rem;
 }
 }
 

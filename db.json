@@ -28,13 +28,13 @@
       "id": "5",
       "usuario": "cliente1",
       "password": "5678",
-      "rol": "user"
+      "rol": "cliente"
     },
     {
       "id": "6",
       "usuario": "cliente2",
       "password": "abcd",
-      "rol": "user"
+      "rol": "cliente"
     },
     {
       "id": "68c3",
@@ -152,6 +152,14 @@
       "anio": 2025,
       "sinopsis": "Ethan Hunt y su equipo de la IMF se enfrentan a una nueva amenaza global que pone en peligro la seguridad del mundo. Con escenas de acción trepidantes y un guion lleno de sorpresas, esta entrega promete ser una de las más emocionantes de la saga.",
       "imagenUrl": "/img/mission_impossible.jpg"
+    },
+    {
+      "id": "4fe4",
+      "titulo": "Karate Kid: Leyendas",
+      "genero": "Acción, Drama, Familia",
+      "anio": "2025",
+      "sinopsis": "En Karate Kid: Leyendas, tras una tragedia familiar, el prodigio del kung fu Li Fong (Ben Wang) se ve desarraigado de su hogar en Pekín y obligado a trasladarse a Nueva York con su madre. Li lucha por dejar atrás su pasado mientras intenta encajar con sus nuevos compañeros de clase y, aunque no quiere pelear, los problemas parecen encontrarlo en todas partes. Cuando un nuevo amigo necesita su ayuda, Li se presenta a una competencia de karate, pero sus habilidades no son suficientes. El profesor de kung fu de Li, el Sr. Han (Jackie Chan), pide ayuda al Karate Kid original, Daniel LaRusso (Ralph Macchio), y Li aprende una nueva forma de luchar, fusionando sus dos estilos en uno para el enfrentamiento final de artes marciales.",
+      "imagenUrl": "/img/Karate-Kid-Leyendas-Poster-Oficial.jpg"
     }
   ],
   "clientes": [
@@ -181,7 +189,7 @@
     },
     {
       "id": "4fb1",
-      "nombre": "pedro",
+      "nombre": "Pedro Rodríguez",
       "contacto": "pedro@gmail.com",
       "telefono": "123456"
     }

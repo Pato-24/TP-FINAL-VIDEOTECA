@@ -73,6 +73,14 @@
       "password": "pablo123",
       "email": "pablo@gmail.com",
       "rol": "cliente"
+    },
+    {
+      "id": "cfa4",
+      "nombre": "José Ibarra",
+      "usuario": "pepe123",
+      "password": "pepe123",
+      "email": "pepe@gmail.com",
+      "rol": "cliente"
     }
   ],
   "integrantes": [
@@ -250,6 +258,30 @@
       "peliculaId": "7",
       "fechaInicio": "2025-06-29",
       "fechaFin": "2025-06-30",
+      "devuelto": false
+    },
+    {
+      "id": "1e88",
+      "clienteId": "a5b9",
+      "peliculaId": "1",
+      "fechaInicio": "2025-07-01",
+      "fechaFin": "2025-07-08",
+      "devuelto": false
+    },
+    {
+      "id": "b623",
+      "clienteId": "a5b9",
+      "peliculaId": "3",
+      "fechaInicio": "2025-07-01",
+      "fechaFin": "2025-07-08",
+      "devuelto": false
+    },
+    {
+      "id": "e255",
+      "clienteId": "a5b9",
+      "peliculaId": "4",
+      "fechaInicio": "2025-07-01",
+      "fechaFin": "2025-07-08",
       "devuelto": false
     }
   ]
